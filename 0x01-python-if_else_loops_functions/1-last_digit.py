@@ -6,8 +6,7 @@ if number >= 0:
 else:
     last_digit = ((abs(number) * -1) % 10) * -1
 
-message = f"Last digit of {number:d} is {last_digit:d} and is" % (number, last_digit)
-
+message = "Last digit of %d is %d and is" % (number, last_digit)
 if last_digit == 0:
     print(message, "0")
 elif last_digit > 5:
